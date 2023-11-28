@@ -1,0 +1,323 @@
+                /* Global Styling */
+
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'bold';
+    src: url('../fonts/Roboto-Bold.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+    font-family: 'roboto';
+}
+
+h1 {
+    font-size: 3.85rem;
+}
+
+h2 {
+    font-size: 2.7rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.7rem;
+    font-family: 'bold';
+}
+
+                /* Header */
+
+header {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    margin-bottom: 15vh;
+}
+
+.animation {
+    height: 90%;
+    width: 60%;
+    background-image: url('../img/ilustracion1.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+}
+
+.animation img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: guy 5s linear infinite forwards;
+}
+
+@keyframes guy {
+    0% {
+        transform: translate(0);
+    }
+    50% {
+        transform: translateY(15%);
+    }
+    100% {
+        transform: translate(0);
+    }
+    
+}
+.LogoH1 {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: space-between;
+    gap: 60vh;
+}
+
+.h1 {
+    margin-left: 10vw;
+    width: 60%;
+}
+
+h1 {
+    margin-bottom: 2vh;
+}
+
+.h1 p {
+    width: 90%;
+    margin-bottom: 6vh;
+}
+
+.h1 p:nth-of-type(2) {
+    color: #FF3571;
+    text-transform: uppercase;
+    font-family: 'bold';
+}
+
+.project {
+    position: absolute;
+    left: 7vw;
+    top: 6vh;
+}
+
+.project p {
+    font-size: 0.8rem;
+}
+
+.logo img {
+    width: 2.5%;
+    position: fixed;
+    left: 3vw;
+    top: 5vh;
+}
+
+
+
+                /* Main */
+                /* Section Img */
+
+.section__img img{
+    width:100%;
+    padding-bottom: 20vh;
+}
+
+                /* Section about */
+
+.about {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150vh;
+}
+
+.earlier {
+    position: absolute;
+    left: 40vw;
+    width: 600px;
+    font-size: 1.28rem;
+    line-height: 2.5rem;
+}
+
+.idea {
+    position: absolute;
+    width: 295px;
+    left: 10vw;
+}
+
+.idea img {
+    width: 15%;
+}
+
+.learning {
+    position: absolute;
+    left: 20vw;
+    top: 45vh;
+    width: 40vw;
+    padding-bottom: 20vh;
+}
+
+.steps {
+    margin-bottom: 30vh;
+    position: absolute;
+    top: 80vh;
+    left: 20vw;
+    width: 80%;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 20vh;
+}
+
+.step__detail p{
+    width: 295px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.step__detail p:first-of-type {
+    font-family: 'bold';
+}
+
+.logo__steps {
+    width: 4%;
+}
+
+.step1:before {
+    content: '';
+    background: url('../img/title02.svg');
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: -5vh;
+    top: -1vh;
+}
+
+.step2:before {
+    content: '';
+    background: url('../img/title04.svg');
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 35.5vw;
+    top: -1vh;
+}
+
+.step3:before {
+    content: '';
+    background: url('../img/title01.svg');
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: -5vh;
+    top: 29.5vh;
+}
+
+.step4:before {
+    content: '';
+    background: url('../img/title03.svg');
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 35.5vw;
+    top: 29.5vh;
+}
+
+                /* Section Challenge */
+
+.challenge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20vh;
+}
+
+.letsgo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    width: 29%;
+    margin-bottom: 10vh;
+}
+
+.challenge__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 45vh;
+}
+
+.challenge__box img {
+    width: 25%;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.number {
+    font-size: 3.7rem;
+    color: #DDDDDD;
+}
+
+                /* Section Subscribe */
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    height: 20vh;
+    margin-bottom: 10vh;
+}
+
+.subscribe p {
+    width: 20vw;
+    text-align: center;
+}
+
+input {
+    padding: 2vh 5vw;
+    border-radius: 8px;
+    border: 1px solid #F5F5F5;
+    background: #FFF;
+    box-shadow: 0px 15px 60px 0px rgba(12, 14, 31, 0.06);
+}
+
+::placeholder {
+    color: #757575;
+}
+
+.subscribe a {
+    text-decoration: none;
+    color: white;
+    background-color: #FF3571;
+    padding: 1vh 2vw;
+}
+
+                /* Footer */
+
+footer div {
+    display: flex;
+    margin-left: 10vw;
+    margin-bottom: 1vh;
+    gap: 0.2vw;
+}
+
+footer div img {
+    width: 1%;
+}
